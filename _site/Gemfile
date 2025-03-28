@@ -3,5 +3,5 @@
 source "https://rubygems.org"
 
 gem "github-pages"
-gem "jekyll-theme-collider"
+#gem "jekyll-theme-collider"
 # gem "rails"
