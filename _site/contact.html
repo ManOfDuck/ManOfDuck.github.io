@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Home</title>
+  <title>Contact</title>
   <meta name="description" content="[Your site description]
 ">
 
@@ -98,7 +98,25 @@
 </div>
 
       </section>
-        
+        <div class="contact-form">
+  <form action="https://formspree.io/Your email" method="POST">
+    <div class="input-wrapper">
+      <label>Name</label>
+      <input type="text" name="name">
+    </div>
+    <div class="input-wrapper">
+      <label>Email</label>
+      <input type="email" name="_replyto">
+    </div>
+    <div class="input-wrapper">
+      <label>Message</label>
+      <textarea name="message" placeholder="Your message"></textarea>
+    </div>
+    <input type="hidden" name="_next" value="/thanks" />
+    <input type="submit" value="Send" class="bg--green">
+  </form>
+</div>
+
       <footer class="footer">
     <p>&copy; </p>
     <p>Build with Jekyll and <span class="love">❤</span> by <a href="https://github.com/nrandecker">Nathan Randecker</a></p>
