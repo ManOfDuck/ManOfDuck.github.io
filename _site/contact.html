@@ -13,11 +13,11 @@
   <body>
     <div class="wrap">
       
-      <div id="particles-js">
-  
 
-<header class="header__homepage bg--green">
+<header class=" bg--purple">
   <nav>
+    
+      <a class="header__home" href="/">[&quot;Your site title here&quot;]</a>
     
     <ul>
       <li>
@@ -32,20 +32,28 @@
     </ul>
   </nav>
   
+    <h1 class="header__title">Contact</h1>
+  
 </header>
 
-  <div class="site-title__wrapper">
-    <h1>
-      <span class="site-title__text">Your username</span>
-      <span class="site-title__text--sub">Your description</span>
-    </h1>
-    <a href="https://github.com/Your GitHub user name" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-    <a href="LinkedIn profile url" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
-  </div>
+      <div class="contact-form">
+  <form action="https://formspree.io/Your email" method="POST">
+    <div class="input-wrapper">
+      <label>Name</label>
+      <input type="text" name="name">
+    </div>
+    <div class="input-wrapper">
+      <label>Email</label>
+      <input type="email" name="_replyto">
+    </div>
+    <div class="input-wrapper">
+      <label>Message</label>
+      <textarea name="message" placeholder="Your message"></textarea>
+    </div>
+    <input type="hidden" name="_next" value="/thanks" />
+    <input type="submit" value="Send" class="bg--green">
+  </form>
 </div>
-
-<script type="text/javascript" src="http://localhost:4000/assets/js/particles.js"></script>
-<script type="text/javascript" src="http://localhost:4000/assets/js/app.js"></script>
 
     </div>
   </body>
