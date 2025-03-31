@@ -1,0 +1,36 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/jekyll.json": "_config.yml"
+  },
+
+  "files.associations": {
+    "*.html": "liquid",
+    "*.liquid": "liquid",
+    "*.md": "markdown"
+  },
+
+  "emmet.includeLanguages": {
+    "liquid": "html"
+  },
+
+  // Minimal formatter config
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // General tidy settings
+  "editor.formatOnSave": false,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "prettier.singleQuote": true,
+  "prettier.htmlWhitespaceSensitivity": "ignore"
+}
