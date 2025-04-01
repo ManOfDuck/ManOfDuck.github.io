@@ -1,0 +1,26 @@
+---
+---
+// Normalize (copy full normalize.scss into your _sass/lib)
+@import 'lib/normalize';
+
+// Google Fonts (better to move this into <head> via HTML, but here's SCSS version)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+// Font Awesome v6 setup
+@import 'lib/fa/fa-config';
+@import 'lib/fa/fontawesome';
+@import 'lib/fa/solid';
+@import 'lib/fa/regular';
+@import 'lib/fa/brands';
+
+// Devicon
+@import 'lib/devicon';
+
+// Site styling
+@import 'vars';
+@import 'animation';
+@import 'header';
+@import 'about';
+@import 'projects';
+@import 'footer';
+@import 'base';

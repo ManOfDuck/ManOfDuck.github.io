@@ -1,0 +1,24 @@
+- label: Email me
+  icon: fa fa-envelope
+  href: mailto:Ian.Warren.Home@gmail.com
+  include: true
+- label: My Bluesky
+  icon: fa-brands fa-bluesky
+  href: https://bsky.app/profile/ianvideogame.bsky.social
+  include: true
+- label: My Twitter
+  icon: fa-brands fa-twitter
+  href: https://twitter.com/ianmakegame
+  include: false
+- label: My Linkedin
+  icon: fa-brands fa-linkedin
+  href: https://www.linkedin.com/in/ian-m-warren/
+  include: true
+- label: My GitHub
+  icon: fa-brands fa-github
+  href: https://github.com/ManOfDuck
+  include: true
+- label: My Itch.io
+  icon: fa-brands fa-itch-io
+  href: https://iwarren.itch.io
+  include: true

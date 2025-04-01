@@ -5,30 +5,18 @@
       <span class="site-description">{{ site.user_title }}</span>
     </h1>
     <div class="header-icons">
-      <a aria-label="Send email" href="#">
-        <i class="icon fa fa-envelope"></i>
-      </a>
-      <a
-        aria-label="My Twitter"
-        target="_blank"
-        href="#"
-      >
-        <i class="icon fa fa-twitter" aria-hidden="true"></i>
-      </a>
-      <a
-        aria-label="My Linkedin"
-        target="_blank"
-        href="#"
-      >
-        <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-      </a>
-      <a
-        aria-label="My Github"
-        target="_blank"
-        href="#"
-      >
-        <i class="icon fa fa-github" aria-hidden="true"></i>
-      </a>
+      {% for link in site.data.links %}
+        {% if link.include != true %}
+          {% continue %}
+        {% endif %}
+        <a
+          aria-label="{{ link.label }}"
+          target = "_blank"
+          href= "{{ link.href }}"
+          rel="noopener external"
+        >
+          <i class = "icon {{ link.icon }}" aria-hidden="true"></i>
+      {% endfor %}
     </div>
     <div class="header-links">
       <a
