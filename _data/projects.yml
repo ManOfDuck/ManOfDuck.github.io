@@ -1,6 +1,8 @@
 - title: Project Title
   alignment: right
   images:
+    - src: /assets/images/skate.jpg
+      alt: skate
     - src: /assets/images/mountains.jpg
       alt: mountain
   skills:
@@ -11,6 +13,8 @@
 - title: Project Title
   alignment: left
   images:
+    - src: /assets/images/mountains.jpg
+      alt: mountain
     - src: /assets/images/skate.jpg
       alt: skate
   skills:
