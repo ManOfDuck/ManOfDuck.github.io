@@ -17,6 +17,8 @@ google-analytics:
 sass:
   sass_dir: _sass
   style: compressed
+  load_paths:
+    - node_modules/bootstrap/scss
 
 # Build exclusions
 exclude:

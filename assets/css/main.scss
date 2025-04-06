@@ -1,6 +1,6 @@
 ---
 ---
-// Normalize (copy full normalize.scss into your _sass/lib)
+@import 'bootstrap';
 @import 'lib/normalize';
 
 // Google Fonts (better to move this into <head> via HTML, but here's SCSS version)

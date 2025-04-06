@@ -1,3 +1,5 @@
+$cut: 768px;
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -5,69 +7,78 @@
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
+
   @media only screen and (min-width: $cut) {
     width: 80%;
   }
 }
 
 .user-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 20px auto;
+
+  @media only screen and (min-width: $cut) {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  &.reverse {
+    flex-direction: column;
+
+    @media only screen and (min-width: $cut) {
+      flex-direction: row-reverse;
+    }
+  }
+
   img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
   }
+
   h5 {
     margin: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
   }
+
   li {
     color: $main;
     font-size: 1.1rem;
   }
+
   p {
     margin-right: 5px;
+    line-height: 1.5;
+  }
+}
+
+.images,
+.contents {
+  width: 100%;
+
+  @media only screen and (min-width: $cut) {
+    width: 48%;
   }
 }
 
 .contents {
-  @media only screen and (min-width: $cut) {
-    margin-left: 0;
-    width: 48%;
+  display: flex;
+  flex-direction: column;
+
+  // optional: consistent spacing between blocks
+  > * + * {
+    margin-top: 1rem;
   }
 }
 
-.contents-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    margin-top: -5%;
-    width: 48%;
-  }
-}
-.images-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    width: 48%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: right;
-    }
-  }
-}
-
-.images-left {
-  @media only screen and (min-width: $cut) {
-    float: left;
-    width: 48%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: left;
-    }
-  }
-}
 
 .project-link {
+  align-self: flex-start;
+  width: auto;
   display: inline-block;
   margin: 10px 0px;
   padding: 5px;
@@ -82,6 +93,7 @@
   transition: color 0.3s ease-out,
               background-color 0.3s ease-out,
               border-color 0.3s ease-out;
+
   &:hover {
     background-color: $purple;
     border-color: $purple;
@@ -90,6 +102,7 @@
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
   }
+
   &:active {
     background-color: $purple;
     border-color: $purple;

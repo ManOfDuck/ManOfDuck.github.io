@@ -63,7 +63,6 @@
   justify-content: center;
   text-align: center;
   .icon {
-    text-align: center;
     color: #FFF;
     width: 20px;
     height: 20px;
@@ -73,20 +72,32 @@
     border-radius: 50%;
     border: 2px solid #FFF;
     transition: all .7s;
-    &:hover {
-      color: $main;
-      background: #FFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    box-sizing: content-box;
+
+    i, svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 1;
     }
+
+    &:hover,
     &:active {
       color: $main;
       background: #FFF;
     }
-    @media only screen and (min-width:$cut) {
+
+    @media only screen and (min-width: $cut) {
       width: 35px;
       height: 35px;
       font-size: 35px;
     }
   }
+
 }
 
 .down {
