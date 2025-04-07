@@ -15,7 +15,7 @@
     - Developed a system to visualize the actual code behind components
     - Designed all levels in the demo, consisting of 17 unique puzzles
     - Documented design and iteration process
-  description: Developer's Day Off! is a 2D puzzle platformer where the player solves problems by changing the game’s “code” through a Unity-inspired faux game engine. I came up with the game's concept and serve as its lead designer and backend programmer.
+  description: A 2D puzzle platformer where the player solves problems by changing the game’s “code” through a Unity-inspired faux game engine. I came up with the game's concept and serve as its lead designer and backend programmer.
   link: https://ionbowling.itch.io/developersdayoff
 
 - title: Star Charger
@@ -32,7 +32,7 @@
     - Created system to spawn and manipulate entities based on density values and simulated camera speed
     - Implemented core game loop, including player controller, speed management, and hyperspeed mechanic
     - Wrote and iterated on design doc
-  description: Star Charger is an arcade-inspired bullet hell space shooter with a unique relationship between speed, firepower, and player hitbox. We based the game on an old concept of mine, and I served as the lead designer and gameplay programmer.
+  description: An arcade-inspired bullet hell space shooter with a unique relationship between speed, firepower, and player hitbox. We based the game on an old concept of mine, and I served as the lead designer and gameplay programmer.
   link: https://ryandavidsondev.itch.io/star-charger
 
 - title: ...and more!
