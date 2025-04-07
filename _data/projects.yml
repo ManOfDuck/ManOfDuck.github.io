@@ -22,7 +22,7 @@
   alignment: left
   imagefolder: Star-Charger
   images:
-    - src: Star-Charger-title.png
+    - src: Star-Charger-Title.png
       alt: Star Charger title screen
     - src: Star-Charger-Gameplay.png
       alt: Star Charger gameplay
