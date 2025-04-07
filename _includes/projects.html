@@ -9,14 +9,14 @@
         id="carousel-{{ forloop.index }}"
         class="carousel slide carousel-fade"
         data-bs-ride="carousel"
-        data-bs-interval="3000"
+        data-bs-interval="4500"
         data-bs-pause="false"
       >
         <div class="carousel-inner">
           {% for image in project.images %}
             <div class="carousel-item {% if forloop.first %}active{% endif %} img-fluid">
               <img
-                src="{{ image.src }}"
+                src="assets/images/{% if project.imagefolder%}{{ project.imagefolder }}/{% endif %}{{ image.src }}"
                 class="d-block w-100"
                 alt="{{ image.alt }}"
               >
@@ -35,7 +35,9 @@
       <p>
         {{ project.description }}
       </p>
-      <a class="project-link" href="{{ project.link }}">Check it out</a>
+      {% if project.link %}
+        <a class="project-link" target = "_blank" href="{{ project.link }}" rel="noopener external">Check it out</a>
+      {% endif %}
     </div>
   </div>
 {% endfor %}
